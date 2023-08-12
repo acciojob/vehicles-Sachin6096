@@ -3,8 +3,8 @@ package com.driver;
 public class Vehicle {
 
     protected String name;
-    private int currentSpeed;
-    private int currentDirection;
+    private int currentSpeed = 0;
+    private int currentDirection = 0;
 
     public Vehicle(String name) {
         this.name = name;
