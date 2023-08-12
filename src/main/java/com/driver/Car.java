@@ -5,12 +5,12 @@ public class Car extends Vehicle {
     private String type;
     private int doors;
     private int gears;
-    public boolean isManual;
+    protected boolean isManual;
     private int currentGear;
     private int seats;
 
     public Car(String name) {
-
+        this.name = name;
     }
 
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {

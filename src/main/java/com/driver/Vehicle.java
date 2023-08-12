@@ -2,12 +2,12 @@ package com.driver;
 
 public class Vehicle {
 
-    public String name;
+    protected String name;
     private int currentSpeed;
     private int currentDirection;
 
     public Vehicle(String name) {
-
+        this.name = name;
     }
 
     public Vehicle() {
