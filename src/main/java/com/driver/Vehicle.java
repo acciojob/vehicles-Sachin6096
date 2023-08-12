@@ -2,7 +2,7 @@ package com.driver;
 
 public class Vehicle {
 
-    private String name;
+    public String name;
     private int currentSpeed;
     private int currentDirection;
 
@@ -46,7 +46,8 @@ public class Vehicle {
 
     public void steer(int direction){
         //direction is in degrees, add it to the current direction
-        setCurrentDirection(direction);
+        int newdirection = direction + this.getCurrentDirection();
+        setCurrentDirection(newdirection);
         System.out.println("steer method called - The direction is changed to: " + currentDirection + " degrees");
     }
 
